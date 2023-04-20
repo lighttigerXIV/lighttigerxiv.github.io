@@ -1,0 +1,132 @@
+:root {
+  --base: #1e1e2e;
+  --surface0: #313244;
+  --surface1: #45475a;
+  --mauve: #cba6f7;
+  --green: #a6e3a1;
+  --peach: #fab387;
+  --text: #cdd6f4;
+  --xsmall: 4px;
+  --small: 8px;
+  --medium: 16px;
+}
+
+body {
+  min-width: 100%;
+  max-height: 100vh;
+  background: var(--base);
+  color: var(--text);
+
+}
+
+.no-spacing {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background: var(--surface0);
+  padding: var(--medium);
+  border-radius: var(--medium);
+  border: 2px solid var(--mauve);
+}
+
+.social-card {
+  color: var(--mauve);
+  padding: var(--small);
+}
+
+.social-card:hover {
+  background: var(--surface1);
+  cursor: pointer;
+  border-radius: var(--medium);
+  font-weight: bold;
+}
+
+.item-card {
+  padding: var(--small);
+  margin: auto;
+  border-radius: var(--medium);
+}
+
+.item-card:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--surface1);
+}
+
+.language-card{
+
+  padding: var(--small);
+  margin: auto;
+  border-radius: var(--medium);
+}
+
+.project-card:hover{
+  cursor: pointer;
+  background: var(--surface1);
+}
+
+
+.flexy {
+  flex: 1;
+}
+
+.xsmall-horizontal-spacer {
+  width: var(--xsmall);
+}
+
+.small-vertical-spacer {
+  height: var(--small);
+}
+
+
+
+.medium-vertical-spacer {
+  height: var(--medium);
+}
+
+.medium-round {
+  border-radius: var(--medium);
+}
+
+h5 {
+  color: var(--mauve);
+}
+
+
+.test-r {
+
+  background: red;
+}
+
+.test-b {
+
+  background: blue;
+}
+
+.experienced {
+  color: var(--green);
+}
+
+.experienced-dot {
+  background: var(--green);
+  border-radius: var(--xsmall);
+  height: 20px;
+  width: 20px;
+}
+
+.not-so-experienced {
+  color: var(--peach);
+}
+
+.not-so-experienced-dot {
+  background: var(--peach);
+  border-radius: var(--xsmall);
+  height: 20px;
+  width: 20px;
+}
+
+.fit{
+  object-fit: contain;
+}
