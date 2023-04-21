@@ -15,6 +15,8 @@ export default function AndroidPage() {
 
     useEffect(() => {
 
+        window.scrollTo(0, 0);
+
         if (Object.keys(projectsStars).length === 0) {
 
             getProjectsStars(

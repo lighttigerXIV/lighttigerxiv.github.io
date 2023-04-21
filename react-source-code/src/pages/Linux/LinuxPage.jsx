@@ -13,6 +13,8 @@ export default function LinuxPage() {
 
     useEffect(() => {
 
+        window.scrollTo(0, 0);
+
         if (Object.keys(projectsStars).length === 0) {
 
             getProjectsStars(
@@ -71,7 +73,7 @@ export default function LinuxPage() {
                         image={TerminalRunner}
                     />
 
-                    <SmallVerticalSpacer/>
+                    <SmallVerticalSpacer />
 
                     <ProjectCard
                         stars={projectsStars}

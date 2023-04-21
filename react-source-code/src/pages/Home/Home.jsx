@@ -21,10 +21,15 @@ import LinuxLogo from "../../images/tux.svg"
 import { SmallVerticalSpacer, XSmallHorizontalSpacer, MediumVerticalSpacer } from "../../components/Spacers"
 import { useNavigate } from "react-router"
 import { openInNewWindow } from "./HomeVM"
+import { useEffect } from "react"
 
 export default function HomePage() {
 
     const navigate = useNavigate();
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, [])
 
     const SocialCard = (props) => {
 
