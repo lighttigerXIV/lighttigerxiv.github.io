@@ -10,9 +10,6 @@ import LinuxPage from './pages/Linux/LinuxPage';
 
 function App() {
 
-  document.title = "LighttigerXIV"
-  
-
   return (
     <BrowserRouter>
       <Routes>
