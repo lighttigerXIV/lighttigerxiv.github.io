@@ -47,7 +47,7 @@ export default function HomePage() {
         return (
             <div
                 onClick={() => props.onClick()}
-                className="no-spacing d-flex col-6 item-card justify-content-center"
+                className="no-spacing d-flex col-lg-3  col-6 item-card justify-content-center"
             >
                 <div className="row no-spacing ">
                     <img className="col-12" src={props.image} height={100}></img>
@@ -79,12 +79,10 @@ export default function HomePage() {
 
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid medium-padding">
             <div className="row no-spacing">
                 <div className="col"></div>
                 <div className="col-lg-6 col-md-8 col-sm-10 col-12">
-
-                    <MediumVerticalSpacer />
 
                     <h3>About Me</h3>
 
@@ -134,10 +132,7 @@ export default function HomePage() {
                                 wich is either by making small scripts in linux, developing APIS or doing some frontend to the applications i make.
                             </p>
                             <p>
-                                I am always trying to learn new technologies as time goes by.
-                            </p>
-                            <p>
-                                My favourite development environment is Android.
+                                I am always eager to learn new technologies and experiment with them as time goes by.
                             </p>
                         </div>
                     </div>
@@ -147,8 +142,6 @@ export default function HomePage() {
                     <h3>Technologies I Use</h3>
 
                     <div className="card">
-
-                        <MediumVerticalSpacer />
 
                         <h5>IDE'S / Text Editors</h5>
                         <div className="row">
@@ -174,11 +167,11 @@ export default function HomePage() {
                             <ItemCard
                                 name="Micro"
                                 image={MicroLogo}
-                                onClick={()=>{openInNewWindow("https://github.com/micro/micro");}}
+                                onClick={()=>{openInNewWindow("https://github.com/zyedidia/micro");}}
                             />
                         </div>
 
-                        <SmallVerticalSpacer />
+                        <MediumVerticalSpacer />
 
                         <h5>Programming Languages</h5>
                         <div className="row no-spacing">
@@ -265,9 +258,6 @@ export default function HomePage() {
                 </div>
                 <div className="col"></div>
             </div>
-
-            <MediumVerticalSpacer />
-
         </div>
     )
 }

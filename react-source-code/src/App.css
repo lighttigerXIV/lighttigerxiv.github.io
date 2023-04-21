@@ -16,7 +16,10 @@ body {
   max-height: 100vh;
   background: var(--base);
   color: var(--text);
+}
 
+.medium-padding{
+  padding: var(--medium);
 }
 
 .no-spacing {
